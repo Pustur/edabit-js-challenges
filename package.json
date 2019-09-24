@@ -1,0 +1,18 @@
+{
+  "name": "edabit-js-challenges",
+  "version": "1.0.0",
+  "description": "Solutions for JavaScript challenges on Edabit",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Loris Bettazza",
+    "email": "loris.bettazza@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pustur/edabit-js-challenges.git"
+  },
+  "license": "MIT"
+}
