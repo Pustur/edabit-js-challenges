@@ -14,5 +14,8 @@
     "type": "git",
     "url": "https://github.com/Pustur/edabit-js-challenges.git"
   },
+  "devDependencies": {
+    "prettier": "1.18.2"
+  },
   "license": "MIT"
 }
