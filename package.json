@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "format": "prettier --write \"src/**/*\"",
-    "test": "npm run format"
+    "test": "npm run format && ava"
   },
   "author": {
     "name": "Loris Bettazza",
