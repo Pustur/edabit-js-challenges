@@ -4,7 +4,8 @@
   "description": "Solutions for JavaScript challenges on Edabit",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write \"src/**/*\"",
+    "test": "npm run format"
   },
   "author": {
     "name": "Loris Bettazza",
