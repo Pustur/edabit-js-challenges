@@ -9,7 +9,7 @@
     "lint": "eslint \"src/**/*.js\"",
     "test": "ava",
     "test:watch": "ava --watch",
-    "all": "npm run format:staged && npm run lint && npm t"
+    "all": "npm run format:staged && sh scripts/checkDuplicateLinks.sh && npm run lint && npm t"
   },
   "author": {
     "name": "Loris Bettazza",
