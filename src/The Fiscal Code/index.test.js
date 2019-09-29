@@ -1,6 +1,6 @@
 import fiscalCode from './index';
 
-test('The Fiscal Code', () => {
+test('fiscalCode', () => {
   expect(
     fiscalCode({ name: 'Helen', surname: 'Yu', gender: 'F', dob: '1/12/1950' }),
   ).toBe('YUXHLN50T41');

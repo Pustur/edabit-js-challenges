@@ -1,6 +1,6 @@
 import whereIsWaldo from './index';
 
-test("Where's Waldo?", () => {
+test('whereIsWaldo', () => {
   expect(
     whereIsWaldo([['A', 'A', 'A'], ['A', 'A', 'A'], ['A', 'B', 'A']]),
   ).toEqual([3, 2]);
@@ -8,6 +8,13 @@ test("Where's Waldo?", () => {
     2,
     4,
   ]);
+  expect(
+    whereIsWaldo([
+      ['X', 'X', 'Y', 'X'],
+      ['X', 'X', 'X', 'X'],
+      ['X', 'X', 'X', 'X'],
+    ]),
+  ).toEqual([1, 3]);
   expect(
     whereIsWaldo([
       ['O', 'O', 'O', 'O'],
@@ -18,11 +25,4 @@ test("Where's Waldo?", () => {
       ['O', 'O', 'O', 'O'],
     ]),
   ).toEqual([5, 1]);
-  expect(
-    whereIsWaldo([
-      ['X', 'X', 'Y', 'X'],
-      ['X', 'X', 'X', 'X'],
-      ['X', 'X', 'X', 'X'],
-    ]),
-  ).toEqual([1, 3]);
 });

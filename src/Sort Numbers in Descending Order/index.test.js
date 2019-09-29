@@ -1,6 +1,6 @@
 import sortDecending from './index';
 
-test('Sort Numbers in Descending Order', () => {
+test('sortDecending', () => {
   expect(sortDecending(0)).toBe(0);
   expect(sortDecending(123)).toBe(321);
   expect(sortDecending(321)).toBe(321);

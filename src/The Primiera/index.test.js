@@ -1,6 +1,6 @@
 import getPrimieraScore from './index';
 
-test('The Primiera', () => {
+test('getPrimieraScore', () => {
   expect(getPrimieraScore(['5d', '7h', 'Qc', 'Ac', '4c', 'Kc', 'As'])).toBe(68);
   expect(
     getPrimieraScore(['3d', '6d', '6h', 'Qh', '7s', 'As', '6c', 'Jc']),

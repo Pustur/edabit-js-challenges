@@ -1,6 +1,6 @@
 import sumOfHoles from './index';
 
-test('Hole Number Sequence', () => {
+test('sumOfHoles', () => {
   expect(sumOfHoles(1)).toBe(0);
   expect(sumOfHoles(4)).toBe(1);
   expect(sumOfHoles(6)).toBe(2);

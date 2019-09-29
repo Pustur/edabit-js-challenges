@@ -1,6 +1,6 @@
 import extractPrimes from './index';
 
-test('Find All Prime Numbers in Decimal Integer', () => {
+test('extractPrimes', () => {
   expect(extractPrimes(1)).toEqual([]);
   expect(extractPrimes(2)).toEqual([2]);
   expect(extractPrimes(3)).toEqual([3]);

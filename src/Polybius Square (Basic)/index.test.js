@@ -1,7 +1,6 @@
 import polybius from './index';
 
-test('Polybius Square (Basic)', () => {
-  // Encrypt
+test('polybius', () => {
   expect(polybius('Hi')).toBe('2324');
   expect(polybius('The lesson is: never try')).toBe(
     '442315 311543433433 2443 3315511542 444254',
@@ -11,8 +10,6 @@ test('Polybius Square (Basic)', () => {
   ).toBe(
     '24454344 12151311454315 24 14343344 13114215 143415433344 32151133 44231144 24 14343344 45331415424344113314',
   );
-
-  // Decrypt
   expect(
     polybius('543445 14343344 522433 21422415331443 52244423 4311311114'),
   ).toBe('you dont win friends with salad');

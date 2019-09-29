@@ -1,6 +1,6 @@
 import completelyFilled from './index';
 
-test('Box Completely Filled?', () => {
+test('completelyFilled', () => {
   expect(completelyFilled(['#'])).toBe(true);
   expect(completelyFilled(['##', '##'])).toBe(true);
   expect(completelyFilled(['###', '#*#', '###'])).toBe(true);

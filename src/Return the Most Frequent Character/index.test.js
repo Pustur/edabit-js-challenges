@@ -1,6 +1,6 @@
 import mostFrequentChar from './index';
 
-test('Return the Most Frequent Character', () => {
+test('mostFrequentChar', () => {
   expect(mostFrequentChar(['let', 'them', 'eat', 'cake'])).toEqual(['e']);
   expect(mostFrequentChar(['music', 'madness', 'maniac', 'motion'])).toEqual([
     'm',

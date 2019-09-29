@@ -1,6 +1,6 @@
 import possiblePalindrome from './index';
 
-test('Possible Palindrome', () => {
+test('possiblePalindrome', () => {
   expect(possiblePalindrome('abb')).toBe(true);
   expect(possiblePalindrome('bbb')).toBe(true);
   expect(possiblePalindrome('bbaa')).toBe(true);
@@ -8,7 +8,6 @@ test('Possible Palindrome', () => {
   expect(possiblePalindrome('acabbaa')).toBe(true);
   expect(possiblePalindrome('aacbdbc')).toBe(true);
   expect(possiblePalindrome('bbaaccd')).toBe(true);
-
   expect(possiblePalindrome('ab')).toBe(false);
   expect(possiblePalindrome('abc')).toBe(false);
   expect(possiblePalindrome('aacbdb')).toBe(false);

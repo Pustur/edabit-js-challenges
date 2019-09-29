@@ -1,7 +1,7 @@
 import stepsToConvert from './index';
 
-test('Upper or Lower Case', () => {
-  expect(stepsToConvert('')).toBe(0, 'Rewturn 0 if empty string.');
+test('stepsToConvert', () => {
+  expect(stepsToConvert('')).toBe(0);
   expect(stepsToConvert('aba')).toBe(0);
   expect(stepsToConvert('ABA')).toBe(0);
   expect(stepsToConvert('abC')).toBe(1);

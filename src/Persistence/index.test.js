@@ -1,6 +1,6 @@
 import persistence from './index';
 
-test('Persistence', () => {
+test('persistence', () => {
   expect(persistence(0)).toBe(0);
   expect(persistence(10)).toBe(1);
   expect(persistence(25)).toBe(2);

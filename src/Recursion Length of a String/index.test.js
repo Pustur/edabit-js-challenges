@@ -1,6 +1,6 @@
 import length from './index';
 
-test('Recursion: Length of a String', () => {
+test('length', () => {
   expect(length('')).toBe(0);
   expect(length('a')).toBe(1);
   expect(length('make')).toBe(4);
