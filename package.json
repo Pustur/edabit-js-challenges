@@ -10,7 +10,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "custom": "sh scripts/checkDuplicateLinks.sh && sh scripts/checkFolderNames.sh",
-    "all": "npm run format:staged && npm run custom && npm run lint && npm t"
+    "all": "npm run format:staged && npm run custom && npm run lint && npm t -- --bail"
   },
   "author": {
     "name": "Loris Bettazza",
