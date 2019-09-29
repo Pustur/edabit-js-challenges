@@ -1,30 +1,28 @@
 import whereIsWaldo from './index';
 
-// prettier-ignore
-test("Where's Waldo?", t => {
-  t.deepEqual(whereIsWaldo([
-    ["A", "A", "A"],
-    ["A", "A", "A"],
-    ["A", "B", "A"],
-  ]), [3, 2]);
-
-  t.deepEqual(whereIsWaldo([
-    ["c", "c", "c", "c"],
-    ["c", "c", "c", "d"],
-  ]), [2, 4]);
-
-  t.deepEqual(whereIsWaldo([
-    ["O", "O", "O", "O"],
-    ["O", "O", "O", "O"],
-    ["O", "O", "O", "O"],
-    ["O", "O", "O", "O"],
-    ["P", "O", "O", "O"],
-    ["O", "O", "O", "O"],
-  ]), [5, 1]);
-
-  t.deepEqual(whereIsWaldo([
-    ["X", "X", "Y", "X"],
-    ["X", "X", "X", "X"],
-    ["X", "X", "X", "X"],
-  ]), [1, 3]);
+test("Where's Waldo?", () => {
+  expect(
+    whereIsWaldo([['A', 'A', 'A'], ['A', 'A', 'A'], ['A', 'B', 'A']]),
+  ).toEqual([3, 2]);
+  expect(whereIsWaldo([['c', 'c', 'c', 'c'], ['c', 'c', 'c', 'd']])).toEqual([
+    2,
+    4,
+  ]);
+  expect(
+    whereIsWaldo([
+      ['O', 'O', 'O', 'O'],
+      ['O', 'O', 'O', 'O'],
+      ['O', 'O', 'O', 'O'],
+      ['O', 'O', 'O', 'O'],
+      ['P', 'O', 'O', 'O'],
+      ['O', 'O', 'O', 'O'],
+    ]),
+  ).toEqual([5, 1]);
+  expect(
+    whereIsWaldo([
+      ['X', 'X', 'Y', 'X'],
+      ['X', 'X', 'X', 'X'],
+      ['X', 'X', 'X', 'X'],
+    ]),
+  ).toEqual([1, 3]);
 });

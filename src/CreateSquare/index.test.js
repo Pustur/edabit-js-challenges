@@ -2,16 +2,15 @@ import createSquare from './index';
 
 const getLength = str => (typeof str !== 'string' ? 0 : str.length);
 
-test('CreateSquare', t => {
-  t.is(createSquare(null), '');
-  t.is(createSquare(-1), '');
-  t.is(createSquare(0), '');
-  t.is(createSquare(1), '#');
-  t.is(createSquare(2), '##\n##');
-  t.is(createSquare(3), '###\n# #\n###');
-  t.is(createSquare(4), '####\n#  #\n#  #\n####');
-  t.is(
-    createSquare(10),
+test('CreateSquare', () => {
+  expect(createSquare(null)).toBe('');
+  expect(createSquare(-1)).toBe('');
+  expect(createSquare(0)).toBe('');
+  expect(createSquare(1)).toBe('#');
+  expect(createSquare(2)).toBe('##\n##');
+  expect(createSquare(3)).toBe('###\n# #\n###');
+  expect(createSquare(4)).toBe('####\n#  #\n#  #\n####');
+  expect(createSquare(10)).toBe(
     `##########
 #        #
 #        #
@@ -23,8 +22,7 @@ test('CreateSquare', t => {
 #        #
 ##########`,
   );
-  t.is(
-    createSquare(12),
+  expect(createSquare(12)).toBe(
     `############
 #          #
 #          #
@@ -38,8 +36,7 @@ test('CreateSquare', t => {
 #          #
 ############`,
   );
-  t.is(
-    createSquare(20),
+  expect(createSquare(20)).toBe(
     `####################
 #                  #
 #                  #
@@ -61,8 +58,7 @@ test('CreateSquare', t => {
 #                  #
 ####################`,
   );
-  t.is(
-    createSquare(21),
+  expect(createSquare(21)).toBe(
     `#####################
 #                   #
 #                   #
@@ -85,8 +81,7 @@ test('CreateSquare', t => {
 #                   #
 #####################`,
   );
-  t.is(
-    createSquare(30),
+  expect(createSquare(30)).toBe(
     `##############################
 #                            #
 #                            #
@@ -118,8 +113,7 @@ test('CreateSquare', t => {
 #                            #
 ##############################`,
   );
-  t.is(
-    createSquare(33),
+  expect(createSquare(33)).toBe(
     `#################################
 #                               #
 #                               #
@@ -154,8 +148,7 @@ test('CreateSquare', t => {
 #                               #
 #################################`,
   );
-  t.is(
-    createSquare(50),
+  expect(createSquare(50)).toBe(
     `##################################################
 #                                                #
 #                                                #
@@ -207,8 +200,7 @@ test('CreateSquare', t => {
 #                                                #
 ##################################################`,
   );
-  t.is(
-    createSquare(80),
+  expect(createSquare(80)).toBe(
     `################################################################################
 #                                                                              #
 #                                                                              #
@@ -290,16 +282,16 @@ test('CreateSquare', t => {
 #                                                                              #
 ################################################################################`,
   );
-  t.is(getLength(createSquare(8000)), 64007999);
-  t.is(getLength(createSquare(4025)), 16204649);
-  t.is(getLength(createSquare(3018)), 9111341);
-  t.is(getLength(createSquare(2020)), 4082419);
-  t.is(getLength(createSquare(9856)), 97150591);
-  t.is(getLength(createSquare(7542)), 56889305);
-  t.is(getLength(createSquare(12540)), 157264139);
-  t.is(getLength(createSquare(13021)), 169559461);
-  t.is(getLength(createSquare(16200)), 262456199);
-  t.is(getLength(createSquare(16383)), 268419071);
-  t.is(getLength(createSquare(10235)), 104765459);
-  t.is(getLength(createSquare(15465)), 239181689);
+  expect(getLength(createSquare(8000))).toBe(64007999);
+  expect(getLength(createSquare(4025))).toBe(16204649);
+  expect(getLength(createSquare(3018))).toBe(9111341);
+  expect(getLength(createSquare(2020))).toBe(4082419);
+  expect(getLength(createSquare(9856))).toBe(97150591);
+  expect(getLength(createSquare(7542))).toBe(56889305);
+  expect(getLength(createSquare(12540))).toBe(157264139);
+  expect(getLength(createSquare(13021))).toBe(169559461);
+  expect(getLength(createSquare(16200))).toBe(262456199);
+  expect(getLength(createSquare(16383))).toBe(268419071);
+  expect(getLength(createSquare(10235))).toBe(104765459);
+  expect(getLength(createSquare(15465))).toBe(239181689);
 });

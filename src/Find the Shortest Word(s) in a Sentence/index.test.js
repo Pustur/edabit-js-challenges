@@ -81,8 +81,8 @@ const testData = [
   ],
 ];
 
-test('Find the Shortest Word(s) in a Sentence', t => {
+test('Find the Shortest Word(s) in a Sentence', () => {
   testData.forEach(([input, output]) =>
-    t.deepEqual(findShortestWords(input), output),
+    expect(findShortestWords(input)).toEqual(output),
   );
 });

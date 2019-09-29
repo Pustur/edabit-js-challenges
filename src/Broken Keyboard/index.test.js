@@ -1,10 +1,15 @@
 import findBrokenKeys from './index';
 
-test('Broken Keyboard', t => {
-  t.deepEqual(findBrokenKeys('happy birthday', 'hawwy birthday'), ['p']);
-  t.deepEqual(findBrokenKeys('starry night', 'starrq light'), ['y', 'n']);
-  t.deepEqual(findBrokenKeys('beethoven', 'affthoif5'), ['b', 'e', 'v', 'n']);
-  t.deepEqual(findBrokenKeys('mozart', 'aiwgvx'), [
+test('Broken Keyboard', () => {
+  expect(findBrokenKeys('happy birthday', 'hawwy birthday')).toEqual(['p']);
+  expect(findBrokenKeys('starry night', 'starrq light')).toEqual(['y', 'n']);
+  expect(findBrokenKeys('beethoven', 'affthoif5')).toEqual([
+    'b',
+    'e',
+    'v',
+    'n',
+  ]);
+  expect(findBrokenKeys('mozart', 'aiwgvx')).toEqual([
     'm',
     'o',
     'z',
@@ -12,14 +17,6 @@ test('Broken Keyboard', t => {
     'r',
     't',
   ]);
-  t.deepEqual(
-    findBrokenKeys('5678', '4678'),
-    ['5'],
-    'It should work for numbers.',
-  );
-  t.deepEqual(
-    findBrokenKeys('!!??$$', '$$!!??'),
-    ['!', '?', '$'],
-    'It should work for punctuation.',
-  );
+  expect(findBrokenKeys('5678', '4678')).toEqual(['5']);
+  expect(findBrokenKeys('!!??$$', '$$!!??')).toEqual(['!', '?', '$']);
 });

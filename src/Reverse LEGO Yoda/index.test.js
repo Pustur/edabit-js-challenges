@@ -12,6 +12,8 @@ const testData = [
   ],
 ];
 
-test('Reverse LEGO Yoda', t => {
-  testData.forEach(([input, output]) => t.is(reverseLegoYoda(input), output));
+test('Reverse LEGO Yoda', () => {
+  testData.forEach(([input, output]) =>
+    expect(reverseLegoYoda(input)).toBe(output),
+  );
 });

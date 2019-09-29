@@ -7,8 +7,8 @@
     "format": "pretty-quick",
     "format:staged": "pretty-quick --staged",
     "lint": "eslint \"src/**/*.js\"",
-    "test": "echo \"test\"",
-    "test:watch": "echo \"test:watch\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "custom": "sh scripts/checkDuplicateLinks.sh && sh scripts/checkFolderNames.sh",
     "all": "npm run format:staged && npm run custom && npm run lint && npm t"
   },

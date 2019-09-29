@@ -22,10 +22,10 @@ const testData = [
   ['-5.5 -6 +', -11.5],
 ];
 
-test('Stack Calculator', t => {
+test('Stack Calculator', () => {
   testData.forEach(([input, output]) => {
     const machine = new StackCalc();
     machine.run(input);
-    t.is(machine.value, output);
+    expect(machine.value).toBe(output);
   });
 });

@@ -99,8 +99,8 @@ const testData = [
   [['hellisotterpeople', words2], 'Cleaving stalled: Word not found'],
 ];
 
-test('String Cleaver', t => {
+test('String Cleaver', () => {
   testData.forEach(([[input, words], output]) =>
-    t.is(cleave(input, words), output),
+    expect(cleave(input, words)).toBe(output),
   );
 });

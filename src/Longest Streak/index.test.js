@@ -582,6 +582,8 @@ const testData = [
   ],
 ];
 
-test('Longest Streak', t => {
-  testData.forEach(([input, output]) => t.is(longestStreak(input), output));
+test('Longest Streak', () => {
+  testData.forEach(([input, output]) =>
+    expect(longestStreak(input)).toBe(output),
+  );
 });
