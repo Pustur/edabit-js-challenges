@@ -21,6 +21,9 @@
     "url": "https://github.com/Pustur/edabit-js-challenges.git"
   },
   "devDependencies": {
+    "@babel/core": "7.6.2",
+    "@babel/preset-env": "7.6.2",
+    "babel-jest": "24.9.0",
     "eslint": "6.1.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-config-prettier": "6.3.0",
