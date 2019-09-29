@@ -1,4 +1,3 @@
-import test from 'ava';
 import reverseLegoYoda from './index';
 
 const testData = [

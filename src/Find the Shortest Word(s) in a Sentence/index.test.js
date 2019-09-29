@@ -1,4 +1,3 @@
-import test from 'ava';
 import findShortestWords from './index';
 
 const testData = [

@@ -1,4 +1,3 @@
-import test from 'ava';
 import freeShipping from './index';
 
 test('Online Shopping', t => {

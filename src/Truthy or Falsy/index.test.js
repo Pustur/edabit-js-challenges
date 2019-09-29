@@ -1,4 +1,3 @@
-import test from 'ava';
 import isTruthy from './index';
 
 test('Truthy or Falsy?', t => {

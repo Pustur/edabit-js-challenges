@@ -1,4 +1,3 @@
-import test from 'ava';
 import sumDigProd from './index';
 
 test('Product of Digits of Sum', t => {

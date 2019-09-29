@@ -1,4 +1,3 @@
-import test from 'ava';
 import length from './index';
 
 test('Recursion: Length of a String', t => {

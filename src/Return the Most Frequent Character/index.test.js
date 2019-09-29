@@ -1,4 +1,3 @@
-import test from 'ava';
 import mostFrequentChar from './index';
 
 test('Return the Most Frequent Character', t => {

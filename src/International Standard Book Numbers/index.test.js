@@ -1,4 +1,3 @@
-import test from 'ava';
 import isbn13 from './index';
 
 test('International Standard Book Numbers', t => {

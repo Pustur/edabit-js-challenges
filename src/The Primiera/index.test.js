@@ -1,4 +1,3 @@
-import test from 'ava';
 import getPrimieraScore from './index';
 
 test('The Primiera', t => {

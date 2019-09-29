@@ -1,4 +1,3 @@
-import test from 'ava';
 import sortDecending from './index';
 
 test('Sort Numbers in Descending Order', t => {

@@ -1,4 +1,3 @@
-import test from 'ava';
 import deepCount from './index';
 
 test('Deep Array Count', t => {

@@ -1,4 +1,3 @@
-import test from 'ava';
 import letters from './index';
 
 test('Shared vs. Unique Letters', t => {

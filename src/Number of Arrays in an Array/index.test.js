@@ -1,4 +1,3 @@
-import test from 'ava';
 import numOfSubbarrays from './index';
 
 test('Number of Arrays in an Array', t => {

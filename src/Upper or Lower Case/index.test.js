@@ -1,4 +1,3 @@
-import test from 'ava';
 import stepsToConvert from './index';
 
 test('Upper or Lower Case', t => {

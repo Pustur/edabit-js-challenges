@@ -1,4 +1,3 @@
-import test from 'ava';
 import largestSwap from './index';
 
 test('Largest Swap', t => {

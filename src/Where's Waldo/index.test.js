@@ -1,4 +1,3 @@
-import test from 'ava';
 import whereIsWaldo from './index';
 
 // prettier-ignore

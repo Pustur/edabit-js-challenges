@@ -1,4 +1,3 @@
-import test from 'ava';
 import createSquare from './index';
 
 const getLength = str => (typeof str !== 'string' ? 0 : str.length);

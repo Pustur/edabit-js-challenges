@@ -1,4 +1,3 @@
-import test from 'ava';
 import longestStreak from './index';
 
 const testData = [

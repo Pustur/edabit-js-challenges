@@ -1,4 +1,3 @@
-import test from 'ava';
 import uniqueSort from './index';
 
 test('Purge and Organize', t => {

@@ -1,4 +1,3 @@
-import test from 'ava';
 import completelyFilled from './index';
 
 test('Box Completely Filled?', t => {

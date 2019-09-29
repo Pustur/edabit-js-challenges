@@ -1,4 +1,3 @@
-import test from 'ava';
 import fiscalCode from './index';
 
 test('The Fiscal Code', t => {

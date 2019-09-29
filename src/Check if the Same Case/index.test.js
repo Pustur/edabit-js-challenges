@@ -1,4 +1,3 @@
-import test from 'ava';
 import sameCase from './index';
 
 test('Check if the Same Case', t => {

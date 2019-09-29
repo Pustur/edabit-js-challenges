@@ -1,4 +1,3 @@
-import test from 'ava';
 import persistence from './index';
 
 test('Persistence', t => {

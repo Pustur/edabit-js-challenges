@@ -1,4 +1,3 @@
-import test from 'ava';
 import cleave from './index';
 
 const words1 = [

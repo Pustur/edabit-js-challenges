@@ -1,4 +1,3 @@
-import test from 'ava';
 import makeTitle from './index';
 
 test('Capitalize the First Letter of Each Word', t => {

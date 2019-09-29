@@ -1,4 +1,3 @@
-import test from 'ava';
 import findVertex from './index';
 
 test('Find the Vertex of a Quadratic', t => {

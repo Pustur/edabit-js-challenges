@@ -1,4 +1,3 @@
-import test from 'ava';
 import polybius from './index';
 
 test('Polybius Square (Basic)', t => {

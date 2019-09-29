@@ -1,4 +1,3 @@
-import test from 'ava';
 import oddOneOut from './index';
 
 test('Odd One Out', t => {

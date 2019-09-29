@@ -1,4 +1,3 @@
-import test from 'ava';
 import extractPrimes from './index';
 
 test('Find All Prime Numbers in Decimal Integer', t => {

@@ -1,4 +1,3 @@
-import test from 'ava';
 import admirable from './index';
 
 test('Not Quite Perfect', t => {

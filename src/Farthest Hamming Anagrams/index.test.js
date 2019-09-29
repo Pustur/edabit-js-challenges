@@ -1,4 +1,3 @@
-import test from 'ava';
 import maxHam from './index';
 
 test('Farthest Hamming Anagrams', t => {

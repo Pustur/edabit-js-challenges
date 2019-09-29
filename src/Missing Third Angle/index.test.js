@@ -1,4 +1,3 @@
-import test from 'ava';
 import missingAngle from './index';
 
 test('Missing Third Angle', t => {

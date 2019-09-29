@@ -1,4 +1,3 @@
-import test from 'ava';
 import countOnes from './index';
 
 // prettier-ignore

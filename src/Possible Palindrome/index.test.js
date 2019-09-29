@@ -1,4 +1,3 @@
-import test from 'ava';
 import possiblePalindrome from './index';
 
 test('Possible Palindrome', t => {

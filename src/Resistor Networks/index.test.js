@@ -1,4 +1,3 @@
-import test from 'ava';
 import resist from './index';
 
 test('Resistor Networks', t => {

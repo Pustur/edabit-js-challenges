@@ -1,4 +1,3 @@
-import test from 'ava';
 import minMax from './index';
 
 test('Find the Smallest and Biggest Numbers', t => {

@@ -1,4 +1,3 @@
-import test from 'ava';
 import findBrokenKeys from './index';
 
 test('Broken Keyboard', t => {

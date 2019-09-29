@@ -1,4 +1,3 @@
-import test from 'ava';
 import findIndex from './index';
 
 test('Find the Index', t => {

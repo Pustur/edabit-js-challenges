@@ -1,4 +1,3 @@
-import test from 'ava';
 import bucketize from './index';
 
 test('Word Buckets', t => {

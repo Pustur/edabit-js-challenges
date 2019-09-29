@@ -1,4 +1,3 @@
-import test from 'ava';
 import bitRotate from './index';
 
 test('Bit Rotation', t => {

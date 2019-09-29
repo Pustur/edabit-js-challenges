@@ -1,4 +1,3 @@
-import test from 'ava';
 import maskify from './index';
 
 test('Maskify the String', t => {
