@@ -1,43 +1,39 @@
-import test from 'ava';
 import longestStreak from './index';
 
-const testData = [
-  [[], 0],
-  [[{ date: '1985-03-19' }], 1],
-  [
-    [
+test('longestStreak', () => {
+  expect(longestStreak([])).toBe(0);
+  expect(longestStreak([{ date: '1985-03-19' }])).toBe(1);
+  expect(
+    longestStreak([
       { date: '2019-09-18' },
       { date: '2019-09-19' },
       { date: '2019-09-20' },
       { date: '2019-09-26' },
       { date: '2019-09-27' },
       { date: '2019-09-30' },
-    ],
-    3,
-  ],
-  [
-    [
+    ]),
+  ).toBe(3);
+  expect(
+    longestStreak([
       { date: '2019-09-18' },
       { date: '2019-09-19' },
       { date: '2019-09-20' },
       { date: '2019-09-21' },
       { date: '2019-09-22' },
       { date: '2019-09-23' },
-    ],
-    6,
-  ],
-  [
-    [
+    ]),
+  ).toBe(6);
+  expect(
+    longestStreak([
       { date: '2019-09-16' },
       { date: '2019-09-17' },
       { date: '2019-09-21' },
       { date: '2019-09-22' },
       { date: '2019-09-23' },
-    ],
-    3,
-  ],
-  [
-    [
+    ]),
+  ).toBe(3);
+  expect(
+    longestStreak([
       { date: '2019-06-25' },
       { date: '2019-06-28' },
       { date: '2019-07-02' },
@@ -88,11 +84,10 @@ const testData = [
       { date: '2019-09-20' },
       { date: '2019-09-22' },
       { date: '2019-09-23' },
-    ],
-    10,
-  ],
-  [
-    [
+    ]),
+  ).toBe(10);
+  expect(
+    longestStreak([
       { date: '2019-03-25' },
       { date: '2019-03-26' },
       { date: '2019-03-27' },
@@ -179,11 +174,10 @@ const testData = [
       { date: '2019-07-23' },
       { date: '2019-09-20' },
       { date: '2019-09-24' },
-    ],
-    14,
-  ],
-  [
-    [
+    ]),
+  ).toBe(14);
+  expect(
+    longestStreak([
       { date: '2018-05-25' },
       { date: '2018-06-10' },
       { date: '2018-06-13' },
@@ -427,11 +421,10 @@ const testData = [
       { date: '2019-09-24' },
       { date: '2019-09-25' },
       { date: '2019-09-26' },
-    ],
-    39,
-  ],
-  [
-    [
+    ]),
+  ).toBe(39);
+  expect(
+    longestStreak([
       { date: '2019-04-29' },
       { date: '2019-04-30' },
       { date: '2019-05-03' },
@@ -578,11 +571,6 @@ const testData = [
       { date: '2019-09-24' },
       { date: '2019-09-25' },
       { date: '2019-09-26' },
-    ],
-    98,
-  ],
-];
-
-test('Longest Streak', t => {
-  testData.forEach(([input, output]) => t.is(longestStreak(input), output));
+    ]),
+  ).toBe(98);
 });

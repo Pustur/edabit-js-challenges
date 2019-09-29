@@ -1,11 +1,10 @@
-import test from 'ava';
 import missingAngle from './index';
 
-test('Missing Third Angle', t => {
-  t.is(missingAngle(27, 59), 'obtuse');
-  t.is(missingAngle(135, 11), 'acute');
-  t.is(missingAngle(45, 45), 'right');
-  t.is(missingAngle(45, 15), 'obtuse');
-  t.is(missingAngle(31, 100), 'acute');
-  t.is(missingAngle(35, 55), 'right');
+test('missingAngle', () => {
+  expect(missingAngle(35, 55)).toBe('right');
+  expect(missingAngle(45, 45)).toBe('right');
+  expect(missingAngle(27, 59)).toBe('obtuse');
+  expect(missingAngle(45, 15)).toBe('obtuse');
+  expect(missingAngle(31, 100)).toBe('acute');
+  expect(missingAngle(135, 11)).toBe('acute');
 });

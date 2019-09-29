@@ -1,20 +1,19 @@
-import test from 'ava';
 import mostFrequentChar from './index';
 
-test('Return the Most Frequent Character', t => {
-  t.deepEqual(mostFrequentChar(['let', 'them', 'eat', 'cake']), ['e']);
-  t.deepEqual(mostFrequentChar(['music', 'madness', 'maniac', 'motion']), [
+test('mostFrequentChar', () => {
+  expect(mostFrequentChar(['let', 'them', 'eat', 'cake'])).toEqual(['e']);
+  expect(mostFrequentChar(['music', 'madness', 'maniac', 'motion'])).toEqual([
     'm',
   ]);
-  t.deepEqual(mostFrequentChar(['apple', 'bandage', 'yodel', 'make']), [
+  expect(mostFrequentChar(['apple', 'bandage', 'yodel', 'make'])).toEqual([
     'a',
     'e',
   ]);
-  t.deepEqual(mostFrequentChar(['potion', 'master', 'professor', 'snape']), [
+  expect(mostFrequentChar(['potion', 'master', 'professor', 'snape'])).toEqual([
     'o',
     's',
   ]);
-  t.deepEqual(
+  expect(
     mostFrequentChar([
       'the',
       'hills',
@@ -26,6 +25,5 @@ test('Return the Most Frequent Character', t => {
       'of',
       'music',
     ]),
-    ['e', 'h', 'i'],
-  );
+  ).toEqual(['e', 'h', 'i']);
 });

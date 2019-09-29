@@ -1,19 +1,17 @@
-import test from 'ava';
 import maskify from './index';
 
-test('Maskify the String', t => {
-  t.is(maskify(''), '');
-  t.is(maskify('1'), '1');
-  t.is(maskify('12'), '12');
-  t.is(maskify('123'), '123');
-  t.is(maskify('1234'), '1234');
-  t.is(maskify('2673951408'), '######1408');
-  t.is(maskify('64607935616'), '#######5616');
-  t.is(maskify('4556364607935616'), '############5616');
-  t.is(maskify(')E$aCU=e"_'), '######=e"_');
-  t.is(maskify('tBy>L/cMe+?<j:6n;C~H'), '################;C~H');
-  t.is(
-    maskify('8Ikhlf6yoxPOwi5cB014eWbRumj7vJ'),
+test('maskify', () => {
+  expect(maskify('')).toBe('');
+  expect(maskify('1')).toBe('1');
+  expect(maskify('12')).toBe('12');
+  expect(maskify('123')).toBe('123');
+  expect(maskify('1234')).toBe('1234');
+  expect(maskify(')E$aCU=e"_')).toBe('######=e"_');
+  expect(maskify('2673951408')).toBe('######1408');
+  expect(maskify('64607935616')).toBe('#######5616');
+  expect(maskify('4556364607935616')).toBe('############5616');
+  expect(maskify('tBy>L/cMe+?<j:6n;C~H')).toBe('################;C~H');
+  expect(maskify('8Ikhlf6yoxPOwi5cB014eWbRumj7vJ')).toBe(
     '##########################j7vJ',
   );
 });

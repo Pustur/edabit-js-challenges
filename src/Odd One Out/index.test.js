@@ -1,11 +1,9 @@
-import test from 'ava';
 import oddOneOut from './index';
 
-test('Odd One Out', t => {
-  t.is(oddOneOut(['silly', 'mom', 'let', 'the']), true);
-  t.is(oddOneOut(['swanky', 'rhino', 'moment']), true);
-  t.is(oddOneOut(['very', 'to', 'then', 'some']), true);
-
-  t.is(oddOneOut(['the', 'them', 'theme']), false);
-  t.is(oddOneOut(['very', 'to', 'an', 'some']), false);
+test('oddOneOut', () => {
+  expect(oddOneOut(['the', 'them', 'theme'])).toBe(false);
+  expect(oddOneOut(['very', 'to', 'an', 'some'])).toBe(false);
+  expect(oddOneOut(['swanky', 'rhino', 'moment'])).toBe(true);
+  expect(oddOneOut(['silly', 'mom', 'let', 'the'])).toBe(true);
+  expect(oddOneOut(['very', 'to', 'then', 'some'])).toBe(true);
 });

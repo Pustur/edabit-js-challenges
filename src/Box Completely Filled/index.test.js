@@ -1,13 +1,16 @@
-import test from 'ava';
 import completelyFilled from './index';
 
-test('Box Completely Filled?', t => {
-  t.is(completelyFilled(['#']), true);
-  t.is(completelyFilled(['##', '##']), true);
-  t.is(completelyFilled(['###', '#*#', '###']), true);
-  t.is(completelyFilled(['#####', '#***#', '#***#', '#***#', '#####']), true);
-  t.is(completelyFilled(['#####', '#* *#', '#***#', '#***#', '#####']), false);
-  t.is(
+test('completelyFilled', () => {
+  expect(completelyFilled(['#'])).toBe(true);
+  expect(completelyFilled(['##', '##'])).toBe(true);
+  expect(completelyFilled(['###', '#*#', '###'])).toBe(true);
+  expect(completelyFilled(['#####', '#***#', '#***#', '#***#', '#####'])).toBe(
+    true,
+  );
+  expect(completelyFilled(['#####', '#* *#', '#***#', '#***#', '#####'])).toBe(
+    false,
+  );
+  expect(
     completelyFilled([
       '######',
       '#****#',
@@ -16,9 +19,8 @@ test('Box Completely Filled?', t => {
       '#****#',
       '######',
     ]),
-    true,
-  );
-  t.is(
+  ).toBe(true);
+  expect(
     completelyFilled([
       '######',
       '#* **#',
@@ -27,9 +29,8 @@ test('Box Completely Filled?', t => {
       '#*** #',
       '######',
     ]),
-    false,
-  );
-  t.is(
+  ).toBe(false);
+  expect(
     completelyFilled([
       '######',
       '#* **#',
@@ -38,6 +39,5 @@ test('Box Completely Filled?', t => {
       '#* **#',
       '######',
     ]),
-    false,
-  );
+  ).toBe(false);
 });

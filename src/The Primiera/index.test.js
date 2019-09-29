@@ -1,14 +1,14 @@
-import test from 'ava';
 import getPrimieraScore from './index';
 
-test('The Primiera', t => {
-  t.is(getPrimieraScore(['5d', '7h', 'Qc', 'Ac', '4c', 'Kc', 'As']), 68);
-  t.is(getPrimieraScore(['3d', '6d', '6h', 'Qh', '7s', 'As', '6c', 'Jc']), 75);
-  t.is(
+test('getPrimieraScore', () => {
+  expect(getPrimieraScore(['5d', '7h', 'Qc', 'Ac', '4c', 'Kc', 'As'])).toBe(68);
+  expect(
+    getPrimieraScore(['3d', '6d', '6h', 'Qh', '7s', 'As', '6c', 'Jc']),
+  ).toBe(75);
+  expect(
     getPrimieraScore(['3d', '7d', 'Kd', '7h', 'Qh', 'Ah', '7s', '3c', 'Jc']),
-    76,
-  );
-  t.is(
+  ).toBe(76);
+  expect(
     getPrimieraScore([
       '7d',
       'Ad',
@@ -24,7 +24,5 @@ test('The Primiera', t => {
       '3c',
       '4c',
     ]),
-    0,
-    'At least one card per suit must be in the deck',
-  );
+  ).toBe(0);
 });

@@ -1,21 +1,20 @@
-import test from 'ava';
 import maxHam from './index';
 
-test('Farthest Hamming Anagrams', t => {
-  t.is(maxHam('dear', 'read'), 2);
-  t.is(maxHam('petal', 'leapt'), 4);
-  t.is(maxHam('solemn', 'melons'), 5);
-  t.is(maxHam('observe', 'verbose'), 6);
-  t.is(maxHam('dare', 'read'), true);
-  t.is(maxHam('mister', 'remits'), true);
-  t.is(maxHam('pirates', 'traipse'), true);
-  t.is(maxHam('solemn', 'lemons'), true);
-  t.is(maxHam('emigrants', 'streaming'), true);
-  t.is(maxHam('naive', 'ravine'), false);
-  t.is(maxHam('solemn', 'molest'), false);
-  t.is(maxHam('teardrop', 'predated'), false);
+test('maxHam', () => {
+  expect(maxHam('dear', 'read')).toBe(2);
+  expect(maxHam('petal', 'leapt')).toBe(4);
+  expect(maxHam('solemn', 'melons')).toBe(5);
+  expect(maxHam('observe', 'verbose')).toBe(6);
+  expect(maxHam('dare', 'read')).toBe(true);
+  expect(maxHam('mister', 'remits')).toBe(true);
+  expect(maxHam('solemn', 'lemons')).toBe(true);
+  expect(maxHam('pirates', 'traipse')).toBe(true);
+  expect(maxHam('emigrants', 'streaming')).toBe(true);
+  expect(maxHam('naive', 'ravine')).toBe(false);
+  expect(maxHam('solemn', 'molest')).toBe(false);
+  expect(maxHam('teardrop', 'predated')).toBe(false);
 
-  // Custom test
-  t.is(maxHam('aab', 'abb'), false);
-  t.is(maxHam('Solemn', 'Melons'), 5);
+  // Additional tests
+  expect(maxHam('Solemn', 'Melons')).toBe(5);
+  expect(maxHam('aab', 'abb')).toBe(false);
 });

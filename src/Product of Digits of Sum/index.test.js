@@ -1,20 +1,19 @@
-import test from 'ava';
 import sumDigProd from './index';
 
-test('Product of Digits of Sum', t => {
-  t.is(sumDigProd(8, 16, 89, 3), 6);
-  t.is(sumDigProd(16, 28), 6);
-  t.is(sumDigProd(9), 9);
-  t.is(sumDigProd(26, 497, 62, 841), 6);
-  t.is(sumDigProd(0), 0);
-  t.is(sumDigProd(17737, 98723, 2), 6);
-  t.is(sumDigProd(123, -99), 8);
-  t.is(sumDigProd(9, 8), 7);
-  t.is(sumDigProd(167, 167, 167, 167, 167, 3), 8);
-  t.is(sumDigProd(111111111), 1);
-  t.is(sumDigProd(98526, 54, 863, 156489, 45, 6156), 2);
-  t.is(sumDigProd(999, 999), 8);
-  t.is(sumDigProd(1, 2, 3, 4, 5, 6), 2);
-  t.is(sumDigProd(999, 2222), 2);
-  t.is(sumDigProd(8618, -2), 6);
+test('sumDigProd', () => {
+  expect(sumDigProd(9)).toBe(9);
+  expect(sumDigProd(0)).toBe(0);
+  expect(sumDigProd(9, 8)).toBe(7);
+  expect(sumDigProd(16, 28)).toBe(6);
+  expect(sumDigProd(8618, -2)).toBe(6);
+  expect(sumDigProd(999, 999)).toBe(8);
+  expect(sumDigProd(123, -99)).toBe(8);
+  expect(sumDigProd(111111111)).toBe(1);
+  expect(sumDigProd(999, 2222)).toBe(2);
+  expect(sumDigProd(8, 16, 89, 3)).toBe(6);
+  expect(sumDigProd(17737, 98723, 2)).toBe(6);
+  expect(sumDigProd(26, 497, 62, 841)).toBe(6);
+  expect(sumDigProd(1, 2, 3, 4, 5, 6)).toBe(2);
+  expect(sumDigProd(167, 167, 167, 167, 167, 3)).toBe(8);
+  expect(sumDigProd(98526, 54, 863, 156489, 45, 6156)).toBe(2);
 });
