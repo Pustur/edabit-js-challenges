@@ -3,6 +3,9 @@
   "env": {
     "jest": true
   },
+  "globals": {
+    "BigInt": true
+  },
   "rules": {
     "no-restricted-syntax": [
       "error",
