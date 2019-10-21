@@ -4,7 +4,7 @@
   "description": "Solutions for JavaScript challenges on Edabit",
   "private": true,
   "scripts": {
-    "format": "pretty-quick",
+    "format": "prettier --write \"**/*{js,jsx}\"",
     "format:staged": "pretty-quick --staged",
     "lint": "eslint \"src/**/*.js\"",
     "test": "jest",
