@@ -4,7 +4,7 @@
   "description": "Solutions for JavaScript challenges on Edabit",
   "private": true,
   "scripts": {
-    "format": "prettier --write \"**/*{js,jsx}\"",
+    "format": "prettier --write \"**/*.{js,md,json}\"",
     "format:staged": "pretty-quick --staged",
     "lint": "eslint \"src/**/*.js\"",
     "test": "jest",
@@ -37,7 +37,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run all"
+      "pre-push": "npm run all"
     }
   },
   "license": "MIT"
