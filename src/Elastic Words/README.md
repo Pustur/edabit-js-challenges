@@ -21,27 +21,27 @@ If the word has an even length, you will consider two parts of equal length, wit
 You will represent the expansion of a letter repeating it as many times as its numeric position (so counting the indexes from/to 1, and not from 0 as usual) in its half, with a crescent order in the left half and a decrescent order in the right half.
 
 ```js
-Word = "ANNA"
+Word = 'ANNA';
 
-Left = "AN"
-Right = "NA"
+Left = 'AN';
+Right = 'NA';
 
-Left = "A" * 1 + "N" * 2 = "ANN"
-Right = "N" * 2 + "A" * 1 = "NNA"
+Left = 'A' * 1 + 'N' * 2 = 'ANN';
+Right = 'N' * 2 + 'A' * 1 = 'NNA';
 
-Word = Left + Right = "ANNNNA"
+Word = Left + Right = 'ANNNNA';
 ```
 
 If the word has an odd length, the pivot (the central character) will be the peak (as to say, the highest value) that delimits the two halves of the word.
 
 ```js
-Word = "KAYAK"
+Word = 'KAYAK';
 
-Left = "K" * 1 + "A" * 2 = "KAA"
-Pivot = "Y" * 3 = "YYY"
-Right = "A" * 2 + "K" * 1 = "AAK"
+Left = 'K' * 1 + 'A' * 2 = 'KAA';
+Pivot = 'Y' * 3 = 'YYY';
+Right = 'A' * 2 + 'K' * 1 = 'AAK';
 
-Word = Left + Pivot + Right = "KAAYYYAAK"
+Word = Left + Pivot + Right = 'KAAYYYAAK';
 ```
 
 Given a `word`, implement a function that returns the elasticized version of the word as a string.

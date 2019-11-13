@@ -10,7 +10,11 @@ To illustrate:
 
 ```js
 [5, 5, 1, 1, 5, 5, 3];
-[[5, 4], [1, 2], [3, 1]];
+[
+  [5, 4],
+  [1, 2],
+  [3, 1],
+];
 
 // Since 5 appears 4 times, 1 appears twice, and 3 appears once.
 ```

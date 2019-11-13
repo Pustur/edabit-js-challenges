@@ -2,16 +2,40 @@ import calculateAmountsOwing from './index';
 
 test('calculateAmountsOwing', () => {
   const data1 = {
-    deviceLevels: [[0, 1.0], [1, 1.5]],
-    devices: [[0, 0], [1, 1]],
-    customers: [[0, 'John', 10, 5], [1, 'Sara', 5, 7]],
-    rentals: [[0, 1, [0], 10], [1, 0, [1], 20], [2, 1, [1, 0], 20]],
+    deviceLevels: [
+      [0, 1.0],
+      [1, 1.5],
+    ],
+    devices: [
+      [0, 0],
+      [1, 1],
+    ],
+    customers: [
+      [0, 'John', 10, 5],
+      [1, 'Sara', 5, 7],
+    ],
+    rentals: [
+      [0, 1, [0], 10],
+      [1, 0, [1], 20],
+      [2, 1, [1, 0], 20],
+    ],
   };
   const data2 = {
     // [id, rate( per/hour )]
-    deviceLevels: [[0, 1.0], [1, 1.5], [2, 2.0], [3, 5.0]],
+    deviceLevels: [
+      [0, 1.0],
+      [1, 1.5],
+      [2, 2.0],
+      [3, 5.0],
+    ],
     // [id, level]
-    devices: [[0, 0], [1, 0], [2, 2], [3, 1], [4, 1]],
+    devices: [
+      [0, 0],
+      [1, 0],
+      [2, 2],
+      [3, 1],
+      [4, 1],
+    ],
     // [id, name, percentage discount (%), flat rate discount($)]
     customers: [
       [0, 'John', 15, 5],
@@ -35,8 +59,19 @@ test('calculateAmountsOwing', () => {
     ],
   };
   const data3 = {
-    deviceLevels: [[0, 1.0], [1, 3.5], [2, 2.0], [3, 5.0]],
-    devices: [[0, 0], [1, 0], [2, 2], [3, 1], [4, 1]],
+    deviceLevels: [
+      [0, 1.0],
+      [1, 3.5],
+      [2, 2.0],
+      [3, 5.0],
+    ],
+    devices: [
+      [0, 0],
+      [1, 0],
+      [2, 2],
+      [3, 1],
+      [4, 1],
+    ],
     customers: [
       [0, 'John', 15, 5],
       [1, 'Lea', 50, 20],

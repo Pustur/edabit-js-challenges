@@ -3,7 +3,13 @@ import getDiagonals from './index';
 test('getDiagonals', () => {
   expect(getDiagonals([])).toEqual([[], []]);
   expect(getDiagonals([['Trivial']])).toEqual([['Trivial'], ['Trivial']]);
-  expect(getDiagonals([[1, 2, 3], [4, 5, 6], [7, 8, 9]])).toEqual([
+  expect(
+    getDiagonals([
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+    ]),
+  ).toEqual([
     [1, 5, 9],
     [3, 5, 7],
   ]);
@@ -14,7 +20,10 @@ test('getDiagonals', () => {
       [true, false, true, false],
       [false, false, false, true],
     ]),
-  ).toEqual([[true, true, true, true], [false, false, false, false]]);
+  ).toEqual([
+    [true, true, true, true],
+    [false, false, false, false],
+  ]);
   expect(
     getDiagonals([
       ['e', 'z', 'y', 'o', 'p', 't'],
@@ -24,7 +33,10 @@ test('getDiagonals', () => {
       ['h', 'e', 'w', 'c', 'i', 'j'],
       ['r', 'p', 'y', 'd', 'x', 't'],
     ]),
-  ).toEqual([['e', 'd', 'a', 'b', 'i', 't'], ['t', 'i', 'n', 'k', 'e', 'r']]);
+  ).toEqual([
+    ['e', 'd', 'a', 'b', 'i', 't'],
+    ['t', 'i', 'n', 'k', 'e', 'r'],
+  ]);
   expect(
     getDiagonals([
       [0, 1, 1, 0, 1, 1, 1, 0, 1, 0],
@@ -38,5 +50,8 @@ test('getDiagonals', () => {
       [0, 1, 1, 1, 0, 1, 1, 1, 0, 0],
       [1, 0, 0, 0, 1, 1, 1, 1, 1, 1],
     ]),
-  ).toEqual([[0, 0, 0, 1, 0, 0, 0, 0, 0, 1], [0, 1, 1, 0, 0, 1, 1, 1, 1, 1]]);
+  ).toEqual([
+    [0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    [0, 1, 1, 0, 0, 1, 1, 1, 1, 1],
+  ]);
 });

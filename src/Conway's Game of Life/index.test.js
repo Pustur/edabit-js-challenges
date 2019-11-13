@@ -1,10 +1,26 @@
 import gameOfLife from './index';
 
 test('gameOfLife', () => {
-  const example1 = [[0, 0, 0], [0, 1, 0], [0, 0, 0]];
-  const example2 = [[0, 1, 0], [1, 1, 1], [0, 1, 0]];
-  const example3 = [[1, 0, 0], [0, 1, 0], [0, 0, 1]];
-  const example4 = [[1, 0, 1], [0, 0, 0], [1, 0, 0]];
+  const example1 = [
+    [0, 0, 0],
+    [0, 1, 0],
+    [0, 0, 0],
+  ];
+  const example2 = [
+    [0, 1, 0],
+    [1, 1, 1],
+    [0, 1, 0],
+  ];
+  const example3 = [
+    [1, 0, 0],
+    [0, 1, 0],
+    [0, 0, 1],
+  ];
+  const example4 = [
+    [1, 0, 1],
+    [0, 0, 0],
+    [1, 0, 0],
+  ];
   const glider = [
     [0, 0, 0, 0, 0],
     [0, 0, 1, 0, 0],
