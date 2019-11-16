@@ -10,9 +10,7 @@ const isAnagram = (str1, str2) =>
 const maxHam = (str1, str2) => {
   if (!isAnagram(str1, str2)) return false;
 
-  const diff = str1
-    .split('')
-    .reduce((total, char, i) => total + Number(str2[i] === char), 0);
+  const diff = str1.split('').filter((char, i) => str2[i] === char).length;
 
   return diff === 0 ? true : str1.length - diff;
 };
