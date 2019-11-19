@@ -8,6 +8,7 @@
   },
   "rules": {
     "no-shadow": ["error", { "allow": ["_"] }],
+    "no-param-reassign": ["error", { "props": false }],
     "no-restricted-syntax": [
       "error",
       "ForInStatement",
