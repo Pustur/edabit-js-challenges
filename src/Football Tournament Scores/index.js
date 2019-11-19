@@ -5,8 +5,7 @@ const GS = 1;
 const GD = 2;
 
 const tournamentScores = matches => {
-  const results = matches.reduce((acc, match) => {
-    const obj = acc;
+  const results = matches.reduce((obj, match) => {
     const [teamA, goalsA, goalsB, teamB] = match.split(/[ -]+/).map(str => {
       const num = Number(str);
       return Number.isNaN(num) ? str : num;

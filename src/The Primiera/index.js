@@ -19,9 +19,9 @@ const getPrimieraScore = deck => {
       const [value, seed] = card;
       const index = 'dhcs'.indexOf(seed);
 
-      return maxScores.map((score, i) =>
-        i === index ? Math.max(maxScores[index], scores[value]) : score,
-      );
+      maxScores[index] = Math.max(maxScores[index], scores[value]);
+
+      return maxScores;
     },
     [0, 0, 0, 0],
   );
