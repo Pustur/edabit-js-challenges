@@ -9,7 +9,7 @@
     "lint": "eslint \"src/**/*.js\"",
     "test": "jest",
     "test:watch": "jest --watch",
-    "custom": "sh scripts/checkDuplicateLinks.sh && sh scripts/checkFolderNames.sh",
+    "custom": "sh scripts/checkDuplicateLinks.sh && sh scripts/checkFolderNames.sh && sh scripts/checkTags.sh",
     "all": "npm run format:staged && npm run custom && npm run lint && npm t -- --bail"
   },
   "author": {

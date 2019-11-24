@@ -1,6 +1,6 @@
 # Calculate an Earned Run Average
 
-`Math` `Number` `Strings`
+`Math` `Numbers` `Strings`
 
 [View on Edabit](https://edabit.com/challenge/94RHwrv6PfaqEGYtr)
 
