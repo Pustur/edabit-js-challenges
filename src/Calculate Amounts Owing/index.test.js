@@ -21,14 +21,12 @@ test('calculateAmountsOwing', () => {
     ],
   };
   const data2 = {
-    // [id, rate( per/hour )]
     deviceLevels: [
       [0, 1.0],
       [1, 1.5],
       [2, 2.0],
       [3, 5.0],
     ],
-    // [id, level]
     devices: [
       [0, 0],
       [1, 0],
@@ -36,7 +34,6 @@ test('calculateAmountsOwing', () => {
       [3, 1],
       [4, 1],
     ],
-    // [id, name, percentage discount (%), flat rate discount($)]
     customers: [
       [0, 'John', 15, 5],
       [1, 'Lea', 25, 20],
@@ -44,7 +41,6 @@ test('calculateAmountsOwing', () => {
       [3, 'Bob', 0, 50],
       [4, 'Eric', 10, 10],
     ],
-    // [id, device, customers, hours]
     rentals: [
       [0, 1, [1, 0], 10],
       [1, 2, [2], 24],
