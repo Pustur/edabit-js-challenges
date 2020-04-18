@@ -13,5 +13,5 @@ test('isTruthy', () => {
   expect(isTruthy(false)).toBe(0);
   expect(isTruthy('false')).toBe(1);
   expect(isTruthy(undefined)).toBe(0);
-  expect(isTruthy(function() {})).toBe(1); // eslint-disable-line func-names
+  expect(isTruthy(function () {})).toBe(1); // eslint-disable-line func-names
 });

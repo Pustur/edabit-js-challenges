@@ -1,7 +1,5 @@
 function toString() {
-  return Array.from(this)
-    .reverse()
-    .join('');
+  return Array.from(this).reverse().join('');
 }
 
 export default toString;

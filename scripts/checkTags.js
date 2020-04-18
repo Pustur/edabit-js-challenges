@@ -39,14 +39,7 @@ process.stdin.on('data', data => {
 });
 
 process.stdin.on('end', () => {
-  const tags = Array.from(
-    new Set(
-      str
-        .trim()
-        .slice(1, -1)
-        .split(/` `/),
-    ),
-  );
+  const tags = Array.from(new Set(str.trim().slice(1, -1).split(/` `/)));
   const invalidTags = tags.filter(tag => !validTags.includes(tag));
 
   if (invalidTags.length) {

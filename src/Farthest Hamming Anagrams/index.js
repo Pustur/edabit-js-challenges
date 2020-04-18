@@ -1,8 +1,4 @@
-const sortString = str =>
-  str
-    .split('')
-    .sort()
-    .join('');
+const sortString = str => str.split('').sort().join('');
 
 const isAnagram = (str1, str2) =>
   sortString(str1.toLowerCase()) === sortString(str2.toLowerCase());

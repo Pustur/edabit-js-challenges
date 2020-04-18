@@ -1,7 +1,4 @@
-const reverse = str =>
-  Array.from(str)
-    .reverse()
-    .join('');
+const reverse = str => Array.from(str).reverse().join('');
 
 const recompose = str =>
   str

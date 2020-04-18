@@ -1,8 +1,3 @@
-const reverseCapitalize = str =>
-  str
-    .split('')
-    .reverse()
-    .join('')
-    .toUpperCase();
+const reverseCapitalize = str => str.split('').reverse().join('').toUpperCase();
 
 export default reverseCapitalize;

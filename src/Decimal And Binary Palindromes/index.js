@@ -1,9 +1,4 @@
-const isPalindrome = str =>
-  str ===
-  str
-    .split('')
-    .reverse()
-    .join('');
+const isPalindrome = str => str === str.split('').reverse().join('');
 
 const palindromeType = num => {
   const isDecimalPalindrome = isPalindrome(String(num));

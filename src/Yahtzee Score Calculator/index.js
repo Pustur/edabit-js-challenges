@@ -18,9 +18,7 @@ const turnScore = (dice, turn) => {
     return freqMap.length === 2 && freqMap.some(([, freq]) => freq === 3) * 25;
   }
 
-  const uniqueSorted = Array.from(new Set(dice))
-    .sort()
-    .join('');
+  const uniqueSorted = Array.from(new Set(dice)).sort().join('');
 
   if (turn <= 10) return /1234|2345|3456/.test(uniqueSorted) * 30;
   if (turn <= 11) return /12345|23456/.test(uniqueSorted) * 40;
