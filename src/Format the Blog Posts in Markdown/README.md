@@ -69,8 +69,7 @@ formatBlogPost(
     userId: 10,
     timestamp: 1536581919628,
     title: 'varius ut blandit non interdum in ante',
-    body:
-      'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.',
+    body: 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.',
   },
   users, // Array of objects, see structure above
 );
