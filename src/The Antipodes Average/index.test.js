@@ -9,8 +9,6 @@ test('antipodesAverage', () => {
   expect(antipodesAverage([1, 2, 3, 5, 7, 9])).toEqual([5, 4.5, 4]);
   expect(antipodesAverage([5, -80, 66, -8, -6])).toEqual([-0.5, -44]);
   expect(antipodesAverage([-1, -4, -12, -2, -11, -6])).toEqual([
-    -3.5,
-    -7.5,
-    -7,
+    -3.5, -7.5, -7,
   ]);
 });

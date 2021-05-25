@@ -10,17 +10,7 @@ test('isUnprimeable', () => {
   expect(isUnprimeable(4065)).toBe('Unprimeable');
   expect(isUnprimeable(5042)).toBe('Unprimeable');
   expect(isUnprimeable(5137)).toEqual([
-    137,
-    2137,
-    3137,
-    5107,
-    5147,
-    5167,
-    5197,
-    5237,
-    5437,
-    5737,
-    9137,
+    137, 2137, 3137, 5107, 5147, 5167, 5197, 5237, 5437, 5737, 9137,
   ]);
   expect(isUnprimeable(13490)).toEqual([13499]);
   expect(isUnprimeable(294001)).toBe('Prime Input');
