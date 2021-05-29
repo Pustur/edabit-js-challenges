@@ -17,6 +17,7 @@ const validTags = [
   'Functional Programming',
   'Games',
   'Higher Order Functions',
+  'Interview',
   'Language Fundamentals',
   'Logic',
   'Loops',
