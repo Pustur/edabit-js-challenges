@@ -1,3 +1,5 @@
+/* eslint-disable no-loss-of-precision */
+
 import lookAndSay from './index';
 
 test('lookAndSay', () => {
